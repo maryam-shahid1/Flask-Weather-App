@@ -1,0 +1,43 @@
+body {
+    background-image: url('https://img.freepik.com/free-vector/realistic-blue-sky-background_1048-6707.jpg?w=1480&t=st=1689010469~exp=1689011069~hmac=9281fb0c10f4b4417dc077532b037bab9937d543afa378174b943992d848c70e');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Poppins';font-size: 22px;
+    
+  }
+
+  .center {
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+h1{
+  margin-top: 250px;
+  color:white;
+  text-align: center;
+}
+
+input{
+  border-radius: 5px;
+  border-color: white;
+}
+
+button{
+  border-radius: 10px;
+  border-color: white;
+  color: white;
+  background-color: skyblue;
+  font-weight: bold;
+}
+
+p{
+  color: white;
+}
+

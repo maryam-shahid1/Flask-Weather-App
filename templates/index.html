@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<style>
+
+</style>
+<html lang="en">
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link href="static/style.css" rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Weather App in Flask</h1>
+  <div class="center">
+  <form action="{{ url_for("index")}}" method="post" class="form">
+    <input type="text" name="cityName" id="cityName" value="{{cityName}}" placeholder="Enter city name">
+    <button type="submit">Submit</button>
+  </form>
+  {%if data%}
+    <p>City: {{data.name}}</p>
+    <p>Temperature: {{data.main.temp}}</p>
+    <p>Pressure: {{data.main.pressure}}</p>
+    <p>Humidity: {{data.main.humidity}}</p>
+  {%endif%}
+  </div>
+</body>
+</html>
